@@ -2,11 +2,11 @@ package com.MyEcom.testcase;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import java.io.IOException;
-import org.testng.asserts.SoftAssert;
 import com.MyEcom.Pom.IndexPagePom;
 import com.MyEcom.Pom.NewProductPage;
 import com.MyEcom.Pom.SignInPagePom;
@@ -77,7 +77,7 @@ public class IndexPageTest extends BaseClass
 		logger = extentReport.createTest("validateLogo");
 		indexPagePom = new IndexPagePom();
 		boolean res = indexPagePom.validateLogo();
-		AssertJUnit.assertTrue(res);
+		Assert.assertTrue(res);
 	}
 	
 	@Test
@@ -86,7 +86,7 @@ public class IndexPageTest extends BaseClass
 		logger = extentReport.createTest("ValidateTittle");
 		indexPagePom = new IndexPagePom();
 		String title = indexPagePom.getTitleOfPage();
-		AssertJUnit.assertEquals(title, "My Store");
+		Assert.assertEquals(title, "My Store");
 		//System.out.println("Titele fof page = "+title);
 	}
 	
@@ -98,7 +98,7 @@ public class IndexPageTest extends BaseClass
 		indexPagePom = new IndexPagePom();
 		indexPagePom.ClickOnSignIn();
 		String pageHeading = signInPagePom.getPageHEading();
-		AssertJUnit.assertEquals(pageHeading, "AUTHENTICATION");
+		Assert.assertEquals(pageHeading, "AUTHENTICATION");
 	}
 	
 	@Test
@@ -107,7 +107,7 @@ public class IndexPageTest extends BaseClass
 		logger = extentReport.createTest("SearchProduct");
 		indexPagePom = new IndexPagePom();
 		indexPagePom.SendTextToSearch();
-		AssertJUnit.assertTrue(true);
+		Assert.assertTrue(true);
 	}
 	
 	@Test

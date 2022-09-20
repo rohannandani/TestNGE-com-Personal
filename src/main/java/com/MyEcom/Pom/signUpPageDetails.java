@@ -63,22 +63,24 @@ public class signUpPageDetails extends BaseClass
 		title.click();
 	}
 	
-	public void getsignUpdata(String Name, String LName, String pass, String add, String city) throws InterruptedException
+	public void getsignUpdata(String Name, String LName, String pass, String add, String city, String zips, String mobile) throws InterruptedException
 	{
 		fname.sendKeys(Name);
 		lname.sendKeys(LName);
 		passward.sendKeys(pass);
 		address1.sendKeys(add);
 		gcity.sendKeys(city);
+		gzipcode.sendKeys(zips);
+		gmnumber.sendKeys(mobile);
 		
 	}
 	
-	public void getpinandmobile()
+	/*public void getpinandmobile()
 	{
 		gzipcode.sendKeys("416102");
 		gmnumber.sendKeys("785694136");
 		
-	}
+	}*/
 	
 	public void dropdowin()
 	{

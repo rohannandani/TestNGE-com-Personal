@@ -17,16 +17,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.MyEcom.testcase.IndexPageTest -->
-      <class name="com.MyEcom.testcase.SignInPageTest">
-        <methods>
-          <include name="signUpDetalis"/>
-          <include name="setUp"/>
-          <include name="readProp"/>
-          <include name="signup"/>
-          <include name="login"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.MyEcom.testcase.SignInPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

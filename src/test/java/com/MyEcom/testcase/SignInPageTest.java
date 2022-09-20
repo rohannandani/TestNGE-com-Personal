@@ -42,7 +42,6 @@ public class SignInPageTest extends BaseClass
 	
 	}
 	
-	
 	@BeforeMethod
 	public void setUp() throws InterruptedException 
 	{
@@ -91,9 +90,10 @@ public class SignInPageTest extends BaseClass
 		signUpPageDetails signuppagedetails = new signUpPageDetails();
 		signuppagedetails.titilemr();
 		signuppagedetails.getsignUpdata((String)signindata.get("fname"),(String)signindata.get("lname"), (String)signindata.get("passward"), 
-										(String)signindata.get("address"), (String)signindata.get("city"));
+										(String)signindata.get("address"), (String)signindata.get("city"), (String)signindata.get("zip"),
+										(String)signindata.get("monum"));
 		Thread.sleep(2000);
-		signuppagedetails.getpinandmobile();
+		//signuppagedetails.getpinandmobile();
 		signuppagedetails.dropdowin();
 		Thread.sleep(9000);
 		}
