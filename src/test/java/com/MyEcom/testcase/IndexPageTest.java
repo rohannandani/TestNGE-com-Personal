@@ -98,7 +98,7 @@ public class IndexPageTest extends BaseClass
 		indexPagePom = new IndexPagePom();
 		indexPagePom.ClickOnSignIn();
 		String pageHeading = signInPagePom.getPageHEading();
-		Assert.assertEquals(pageHeading, "AUTHENTICATION");
+		Assert.assertEquals(pageHeading, "Login - My Store");
 	}
 	
 	@Test
