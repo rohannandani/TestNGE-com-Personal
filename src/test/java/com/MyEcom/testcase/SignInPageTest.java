@@ -96,7 +96,5 @@ public class SignInPageTest extends BaseClass
 		//signuppagedetails.getpinandmobile();
 		signuppagedetails.dropdowin();
 		Thread.sleep(9000);
-		}
-	
-	
+	}
 }
