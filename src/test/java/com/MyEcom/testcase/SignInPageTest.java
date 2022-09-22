@@ -97,6 +97,6 @@ public class SignInPageTest extends BaseClass
 		signuppagedetails.dropdowin();
 		Thread.sleep(9000);
 	}
-
-	//Today Rohan added new function dated 22-09-2022 / 07:17 AM
+	
+	//Rohan User add
 }
